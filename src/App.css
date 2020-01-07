@@ -149,6 +149,9 @@ td {
 #work-xp > tr > :nth-child(2) {
   font-weight: bold;
 }
+#education-table > tr > :nth-child(2) {
+  font-weight: bold;
+}
 
 /* CV section fade in animation */
 .fade-in {
