@@ -1,22 +1,213 @@
-.App {
+.menu {
+  display: none;
+  padding: 1em;
+  border-radius: 0.5em;
+  position: fixed;
+  top: 2em;
+  left: 2em;
+  background: rgba(0, 0, 0, 0.9);
+  z-index: 1;
+}
+
+.menu-button {
+  display: inline-block;
+  cursor: pointer;
+  color: white;
+  z-index: 1;
+}
+.menu-list {
+  list-style-type: none;
+  margin: 0em;
+}
+.menu-item {
+  color: black;
+  margin: 2em 1em;
+  cursor: pointer;
+}
+nav {
+  background: rgba(0, 0, 0, 0.7);
+  margin: 0em;
+  width: 100%;
   text-align: center;
+  position: fixed;
+  top: 0;
+  z-index: 1;
 }
-
-.App-logo {
-  height: 40vmin;
+.nav-list {
+  list-style-type: none;
+  margin: 0em;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.nav-item {
+  display: inline-block;
+  margin: 2em;
+  cursor: pointer;
+}
+a {
+  border-radius: 0.5em;
+  padding: 1em;
+  color: white;
+  text-decoration: none;
+}
+a:hover {
+  background-color: #3A445D;
+  transition: 500ms;
+}
+section {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  text-align: center;
+  margin: auto;
+  width: 100%;
+  height: 100vh;
+}
+.content {
+  border-radius: 2em;
+  padding: 2em;
+  margin: 1em;
+  width: 50%;
+  background: rgba(0, 0, 0, 0.7);
+}
+.home {
+  background: url("./images/backgrounds/digital_background01.jpg") no-repeat center center/cover;
   color: white;
 }
+.about-me {
+  background: url("./images/backgrounds/digital_background02.png") no-repeat center center/cover;
+  color: white;
+}
+.projects {
+  background: url("./images/backgrounds/digital_background03.jpg") no-repeat center center/cover;
+  color: white;
+  height: auto;
+}
+.cv {
+  background: url("./images/backgrounds/digital_background04.jpg") no-repeat center center/cover;
+  color: white;
+}
+.portrait {
+  max-width: 30%;
+  border-radius: 50%;
+  float: right;
+}
+.project-container {
+  text-align: left;
+  margin: 2em;
+  border-radius: 2em;
+  overflow: hidden;
+  background: rgba(18, 48, 48, 0.8);
+}
+.project-img {
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 40%;
+  padding: 0em;
+  margin: 0em;
+  margin-right: 2em;
+}
+.project-content {
+  vertical-align: middle;
+  display: inline-block;
+  max-width: 40%;
+  padding: 1em;
+}
+.project-button {
+  border: 0;
+  background: none;
+  box-shadow: none;
+  padding: 1em;
+  margin: 1em;
+  cursor: pointer;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  background: #2dccd7;
+  color: black;
+}
+.btn-group button {
+  background-color: #F41B6C;
+  border: none;
+  color: white;
+  padding: 1em 2em;
+  cursor: pointer;
+}
+.btn-group button:hover {
+  background-color: #9B1B76;
+}
+.grid-wrapper {
+  display: grid;
+  grid-template-columns: 33% 33% 34%;
+}
+table {
+  width: 100%;
+}
+td {
+  padding: 1em;
+  text-align: left;
+}
+#work-xp > tr > :nth-child(2) {
+  font-weight: bold;
+}
 
-.App-link {
-  color: #09d3ac;
+/* CV section fade in animation */
+.fade-in {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+@-webkit-keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+@keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+@media (max-width: 1500px) {
+  .cv {
+    height: auto;
+  }
+}
+@media (max-width: 1200px) {
+  .content {
+    width: 70%;
+  }
+  .navigation {
+    display: none;
+  }
+  .menu {
+    display: inline-block;
+  }
+}
+@media (max-width: 800px) {
+  .menu {
+    display: inline-block;
+    top: 0.5em;
+    left: 0.5em;
+  }
+}
+@media (max-width: 650px) {
+  .menu {
+    display: inline-block;
+    top: 0.5em;
+    left: 0.5em;
+  }
+  section {
+    height: auto;
+  }
+}
+/* Animations */
+/* Two states of the menu-button rotation */
+.animation-rotate-1 {
+  transform: rotate(180deg);
+  transition: transform 0.7s linear;
+}
+.animation-rotate-2 {
+  transform: rotate(0deg);
+  transition: transform 0.7s linear;
 }
