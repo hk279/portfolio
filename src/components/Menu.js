@@ -52,25 +52,25 @@ class Menu extends React.Component {
     render() {
         if (this.state.opened) {
             return(
-                <div className="menu">
+                <div className="menu fade-in">
                     <div className="menu-button" onClick={this.handleClick}>
                         <div id="menu-icon"><FontAwesomeIcon className="menu-icon" icon={faBars} size="lg" /></div>
                     </div>
-                <ul className="menu-list">
-                    {this.state.menuItems.map((item, i) => 
-                        <li key={i} className="menu-item">
-                            <Link
-                                activeClass="active"
-                                to={item.id}
-                                spy={true}
-                                smooth={true}
-                                duration={500}
-                            >
-                                {item.icon}<span style={{marginLeft: "0.5em"}}>{item.title}</span>
-                            </Link>
-                        </li>
-                    )}
-                </ul>
+                    <ul className="menu-list">
+                        {this.state.menuItems.map((item, i) => 
+                            <li key={i} className="menu-item">
+                                <Link
+                                    activeClass="active"
+                                    to={item.id}
+                                    spy={true}
+                                    smooth={true}
+                                    duration={500}
+                                >
+                                    {item.icon}<span style={{marginLeft: "0.5em"}}>{item.title}</span>
+                                </Link>
+                            </li>
+                        )}
+                    </ul>
                 </div>
             )
         } else {

@@ -203,6 +203,14 @@ td {
   section {
     height: auto;
   }
+  .project-content {
+    max-width: 80%;
+  }
+  .project-img {
+    max-width: 100%;
+  }
+  .btn-group button {
+  }
 }
 /* Animations */
 /* Two states of the menu-button rotation */
