@@ -1,3 +1,7 @@
+body {
+  padding: 0em;
+  margin: 0em;
+}
 .menu {
   display: none;
   padding: 1em;
@@ -85,6 +89,12 @@ section {
 .cv {
   background: url("./images/backgrounds/digital_background04.jpg") no-repeat center center/cover;
   color: white;
+}
+.intro {
+  font-size: 1.3em;
+  text-align: left;
+  display: inline-block;
+  max-width: 60%;
 }
 .portrait {
   max-width: 30%;
@@ -210,13 +220,28 @@ td {
   section {
     height: auto;
   }
+  .intro {
+    font-size: 1em;
+  }
   .project-content {
     max-width: 80%;
   }
   .project-img {
     max-width: 100%;
   }
-  .btn-group button {
+  #education-table > tr > td {
+    display: block;
+  }
+  #education-table > tr > :nth-child(3) {
+    border-bottom: 1px solid white;
+  }
+}
+@media (max-width: 500px) {
+  #work-xp > tr > td {
+    display: block;
+  }
+  #work-xp > tr > :nth-child(3) {
+    border-bottom: 1px solid white;
   }
 }
 /* Animations */
