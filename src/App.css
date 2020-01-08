@@ -42,13 +42,13 @@ nav {
   margin: 2em;
   cursor: pointer;
 }
-a {
+li > a {
   border-radius: 0.5em;
   padding: 1em;
   color: white;
   text-decoration: none;
 }
-a:hover {
+li > a:hover {
   background-color: #3A445D;
   transition: 500ms;
 }
@@ -150,6 +150,13 @@ td {
   font-weight: bold;
 }
 #education-table > tr > :nth-child(2) {
+  font-weight: bold;
+}
+#email-link {
+  display: inline-block;
+  text-decoration: none;
+  color: #F41B6C;
+  margin: 1em;
   font-weight: bold;
 }
 
