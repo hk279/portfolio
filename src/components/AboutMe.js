@@ -4,14 +4,15 @@ import '../App.css'
 const MyStory = () => {
     return(
         <section className="about-me background">
-            <div className="content">
+            <div className="content" style={{textAlign: "left"}}>
                 <h3>About Me</h3>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vel eros donec ac odio. Tincidunt eget nullam non nisi est sit amet facilisis. Nullam eget felis eget nunc lobortis mattis aliquam. Neque ornare aenean euismod elementum nisi quis. Pulvinar elementum integer enim neque volutpat ac tincidunt vitae semper. Ullamcorper sit amet risus nullam eget felis eget. Scelerisque in dictum non consectetur a erat nam at lectus. Nunc mattis enim ut tellus elementum sagittis vitae et leo.
+                    My story as a developer stated after I graduated as a BBA. For a while, I worked in B2B-sales for a software company for awhile and my time there inspired me to start pursuing a career in the development side of things.
                 </p>
                 <p>
-                    Nulla facilisi cras fermentum odio. Pharetra magna ac placerat vestibulum lectus mauris ultrices eros in. Condimentum lacinia quis vel eros donec ac odio tempor. At auctor urna nunc id. Arcu bibendum at varius vel pharetra vel turpis nunc eget. Vitae nunc sed velit dignissim sodales ut. Nec nam aliquam sem et tortor consequat id porta. Curabitur gravida arcu ac tortor dignissim convallis aenean. Tristique nulla aliquet enim tortor at auctor urna nunc. Vel facilisis volutpat est velit egestas dui.
+                    I moved to Espoo in order to study business IT and now I feel like I've found my calling. I enjoy the ever-changing nature of the field and especially the feeling of solving problems and making things work.
                 </p>
+                <p>At this point I'm looking for opportunities to start applying my skills in a real working-life environment.</p>
             </div>
         </section>
     )
