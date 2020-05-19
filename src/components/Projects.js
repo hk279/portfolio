@@ -2,7 +2,7 @@ import React from "react";
 import "../App.css";
 import ProjectCard from "./ProjectCard";
 import quizApp from "../images/quiz_app.PNG";
-import videoGameSales from "../images/video_game_sales.png";
+import videoGameSales from "../images/video_game_sales.PNG";
 import finnkinoSearch from "../images/finnkino_search.PNG";
 import mealRecipes from "../images/meal_recipes.png";
 
