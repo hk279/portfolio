@@ -1,66 +1,104 @@
-import React from 'react'
-import '../App.css'
+import React from "react";
+import "../App.css";
 import Contact from "./CV_sections/Contact";
-import Education from "./CV_sections/Education";
 import Experience from "./CV_sections/Experience";
+import Education from "./CV_sections/Education";
 import Expertise from "./CV_sections/Expertise";
 
 class CV extends React.Component {
     constructor(props) {
-        super(props)
+        super(props);
         this.state = {
-            showTab: "contact"
-        }
+            showTab: "contact",
+            tabSelected: {
+                contact: "selected",
+                experience: "",
+                education: "",
+                expertise: "",
+            },
+        };
         this.selectTab = this.selectTab.bind(this);
     }
 
-    selectTab(tabName) {
-        this.setState({showTab: tabName})
+    selectTab(event) {
+        var tabName = event.target.id;
+        this.setState({
+            showTab: tabName,
+            tabSelected: {
+                contact: "",
+                experience: "",
+                education: "",
+                expertise: "",
+                [tabName]: "selected",
+            },
+        });
     }
 
     render() {
         var tabContent;
         switch (this.state.showTab) {
             case "contact":
-                tabContent = <Contact />
+                tabContent = <Contact />;
                 break;
             case "experience":
-                tabContent = <Experience />
+                tabContent = <Experience />;
                 break;
             case "education":
-                tabContent = <Education />
+                tabContent = <Education />;
                 break;
             case "expertise":
-                tabContent = <Expertise />
+                tabContent = <Expertise />;
                 break;
             default:
                 break;
         }
-        return(
+        return (
             <section className="cv background">
                 <div className="content">
                     <h2>CV</h2>
                     <div className="btn-group">
-                        <button onClick={() => {this.selectTab("contact")}}>
+                        <button
+                            id="contact"
+                            className={this.state.tabSelected.contact}
+                            onClick={(event) => {
+                                this.selectTab(event);
+                            }}
+                        >
                             Contact
                         </button>
-                        <button onClick={() => {this.selectTab("experience")}}>
+                        <button
+                            id="experience"
+                            className={this.state.tabSelected.experience}
+                            onClick={(event) => {
+                                this.selectTab(event);
+                            }}
+                        >
                             Experience
                         </button>
-                        <button onClick={(event) => {this.selectTab("education")}}>
+                        <button
+                            id="education"
+                            className={this.state.tabSelected.education}
+                            onClick={(event) => {
+                                this.selectTab(event);
+                            }}
+                        >
                             Education
                         </button>
-                        <button onClick={(event) => {this.selectTab("expertise")}}>
+                        <button
+                            id="expertise"
+                            className={this.state.tabSelected.expertise}
+                            onClick={(event) => {
+                                this.selectTab(event);
+                            }}
+                        >
                             Expertise
                         </button>
                     </div>
-                    <div>
-                        {tabContent}
-                    </div>
+                    <div>{tabContent}</div>
                 </div>
             </section>
-        )
+        );
     }
 }
 
-export default CV
+export default CV;

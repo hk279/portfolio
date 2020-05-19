@@ -2,7 +2,7 @@ import React from "react";
 import "../App.css";
 import ProjectCard from "./ProjectCard";
 import quizApp from "../images/quiz_app.PNG";
-import videoGameSales from "../images/video_game_sales.PNG";
+import videoGameSales from "../images/video_game_sales.png";
 import finnkinoSearch from "../images/finnkino_search.PNG";
 import mealRecipes from "../images/meal_recipes.png";
 
@@ -14,22 +14,25 @@ class Projects extends React.Component {
                 {
                     title: "Videogame Sales CRUD app",
                     description:
-                        "A full-stack app using a Node.js / Express.js server with an API. Front-end is made built with React using Shards UI toolkit.",
+                        "A full-stack app using a MongoDB-database and Node.js / Express.js server with an API. Front-end is made built with React using Shards UI toolkit.",
                     image: videoGameSales,
-                    url: "https://github.com/hk279/Project-3-Frontend",
+                    sourceUrl: "https://github.com/hk279/Project-3-Frontend",
+                    siteUrl: "",
                 },
                 {
                     title: "Meal Recipes",
                     description:
                         "A React application that allows the user to browse and search for recipes in the Meal DB -API. UI created with React Bootstrap.",
                     image: mealRecipes,
-                    url: "https://github.com/hk279/MealRecipes",
+                    sourceUrl: "https://github.com/hk279/MealRecipes",
+                    siteUrl: "",
                 },
                 {
                     title: "Finnkino Lite Search",
                     description: "Light search utility for movies in Finnkino theatres.",
                     image: finnkinoSearch,
-                    url: "https://github.com/hk279/movies_webapp",
+                    sourceUrl: "https://github.com/hk279/movies_webapp",
+                    siteUrl: "",
                 },
                 {
                     title: "Quiz App",
@@ -37,7 +40,8 @@ class Projects extends React.Component {
                         Separate admin and student logins to manage or answer quizzes respectively. 
                         Connected to a MySQL database.`,
                     image: quizApp,
-                    url: "https://github.com/hk279/quiz_app",
+                    sourceUrl: "https://github.com/hk279/quiz_app",
+                    siteUrl: "",
                 },
             ],
         };
