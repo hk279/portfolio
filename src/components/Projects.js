@@ -5,6 +5,7 @@ import quizApp from "../images/quiz_app.PNG";
 import videoGameSales from "../images/video_game_sales.PNG";
 import finnkinoSearch from "../images/finnkino_search.PNG";
 import mealRecipes from "../images/meal_recipes.png";
+import movieSearchLogin from "../images/movies_search_login.png";
 
 class Projects extends React.Component {
     constructor(props) {
@@ -12,12 +13,20 @@ class Projects extends React.Component {
         this.state = {
             projectCards: [
                 {
+                    title: "Movie Info",
+                    description:
+                        "A Node + EJS web app to demonstrate a login system with session control and making queries to a MongoDB database.",
+                    image: movieSearchLogin,
+                    sourceUrl: "https://github.com/hk279/Mongo-Node-Excercise-Movies-",
+                    siteUrl: "https://node-mongo-movies.herokuapp.com/",
+                },
+                {
                     title: "Videogame Sales CRUD app",
                     description:
                         "A full-stack app using a MongoDB-database and Node.js / Express.js server with an API. Front-end is made built with React using Shards UI toolkit.",
                     image: videoGameSales,
                     sourceUrl: "https://github.com/hk279/Project-3-Frontend",
-                    siteUrl: "",
+                    siteUrl: "https://node-mongo-games-frontend.herokuapp.com/",
                 },
                 {
                     title: "Meal Recipes",
@@ -25,7 +34,7 @@ class Projects extends React.Component {
                         "A React application that allows the user to browse and search for recipes in the Meal DB -API. UI created with React Bootstrap.",
                     image: mealRecipes,
                     sourceUrl: "https://github.com/hk279/MealRecipes",
-                    siteUrl: "",
+                    siteUrl: "https://meal-recipes-app.herokuapp.com/",
                 },
                 {
                     title: "Finnkino Lite Search",
@@ -57,7 +66,8 @@ class Projects extends React.Component {
                             title={item.title}
                             description={item.description}
                             image={item.image}
-                            url={item.url}
+                            sourceUrl={item.sourceUrl}
+                            siteUrl={item.siteUrl}
                         />
                     ))}
                 </div>

@@ -1,13 +1,18 @@
-import React from 'react'
-import '../../App.css'
-import 'animate.css/animate.css'
+import React from "react";
+import "../../App.css";
+import "animate.css/animate.css";
 
 const Experience = () => {
-    return(
+    return (
         <div className="fade-in">
             <h1>Experience</h1>
             <table>
                 <tbody id="work-xp">
+                    <tr>
+                        <td>4/2020 - Present</td>
+                        <td>Löfkulla Golf</td>
+                        <td>Caddiemaster</td>
+                    </tr>
                     <tr>
                         <td>4/2019 – 11/2019</td>
                         <td>Löfkulla Golf</td>
@@ -51,7 +56,7 @@ const Experience = () => {
                 </tbody>
             </table>
         </div>
-    )
-}
+    );
+};
 
-export default Experience
+export default Experience;
