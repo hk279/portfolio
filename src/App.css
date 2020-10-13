@@ -143,6 +143,7 @@ button:focus {
     color: white;
     padding: 1em 2em;
     cursor: pointer;
+    transition: 250ms ease-in;
 }
 .btn-group button:hover {
     background-color: #9b1b76;
@@ -169,20 +170,25 @@ td {
 #education-table > tr > :nth-child(2) {
     font-weight: bold;
 }
-#email-link {
+.contact-icon {
     display: inline-block;
-    text-decoration: none;
-    color: #f41b6c;
+    cursor: pointer;
+    transition: 250ms ease-in;
     margin: 1em;
-    font-weight: bold;
+}
+.contact-icon:hover {
+    transform: scale(0.95);
+    color: #9b1b76;
 }
 
 /* CV section fade in animation */
 .fade-in {
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
+    -webkit-animation-duration: 0.8s;
+    animation-duration: 0.8s;
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
     -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
+    animation-fill-mode: none;
     -webkit-animation-name: fadeIn;
     animation-name: fadeIn;
 }
