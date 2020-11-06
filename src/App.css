@@ -56,6 +56,9 @@ li > a:hover {
     background-color: #3a445d;
     transition: 500ms;
 }
+hr {
+    width: 70%;
+}
 section {
     display: flex;
     flex-direction: column;
