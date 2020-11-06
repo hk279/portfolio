@@ -1,10 +1,10 @@
-import React from 'react'
-import '../App.css'
+import React from "react";
+import "../App.css";
 import portrait from "../images/photo.jpg";
 
 const Home = () => {
-    return(
-        <section className="home background">
+    return (
+        <section className="home">
             <div className="content">
                 <div className="intro">
                     <h1>Hi there,</h1>
@@ -13,9 +13,8 @@ const Home = () => {
                 </div>
                 <img className="portrait" src={portrait} alt="portrait"></img>
             </div>
-            
         </section>
-    )
-}
+    );
+};
 
-export default Home
+export default Home;

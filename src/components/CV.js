@@ -53,7 +53,7 @@ class CV extends React.Component {
                 break;
         }
         return (
-            <section className="cv background">
+            <section className="cv">
                 <div className="content">
                     <h2>CV</h2>
                     <div className="btn-group">

@@ -2,7 +2,7 @@ import React from "react";
 import "../../App.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faJs, faReact, faNode, faJava } from "@fortawesome/free-brands-svg-icons";
-import { faDatabase } from "@fortawesome/free-solid-svg-icons";
+import { faDatabase, faMobile } from "@fortawesome/free-solid-svg-icons";
 
 const Expertise = () => {
     return (
@@ -26,6 +26,16 @@ const Expertise = () => {
                         <td>
                             After getting a good understanding of vanilla JS, I have gotten more into React. Front-end
                             in my most recent projects is build with React.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <FontAwesomeIcon icon={faMobile} size="3x" />
+                        </td>
+                        <td>
+                            Having studied React.js, it was a natural progression for me to get into mobile development
+                            through React Native. This is one of the technologies that I am very much looking forward to
+                            learning more about.
                         </td>
                     </tr>
                     <tr>

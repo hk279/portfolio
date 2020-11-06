@@ -57,7 +57,7 @@ class Projects extends React.Component {
     }
     render() {
         return (
-            <section className="projects background">
+            <section className="projects">
                 <div className="content">
                     <h2>Projects</h2>
                     {this.state.projectCards.map((item) => (

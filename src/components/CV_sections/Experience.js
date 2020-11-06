@@ -9,14 +9,9 @@ const Experience = () => {
             <table>
                 <tbody id="work-xp">
                     <tr>
-                        <td>4/2020 - Present</td>
+                        <td>4/2019 – Present</td>
                         <td>Löfkulla Golf</td>
-                        <td>Caddiemaster</td>
-                    </tr>
-                    <tr>
-                        <td>4/2019 – 11/2019</td>
-                        <td>Löfkulla Golf</td>
-                        <td>Caddiemaster</td>
+                        <td>Caddiemaster (Seasonal)</td>
                     </tr>
                     <tr>
                         <td>1/2016 – 6/2018</td>

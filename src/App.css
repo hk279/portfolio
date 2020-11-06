@@ -89,6 +89,8 @@ section {
 .cv {
     background: url("./images/backgrounds/digital_background04.jpg") no-repeat center center/cover;
     color: white;
+    min-height: 100vh;
+    height: auto;
 }
 .intro {
     font-size: 1.3em;
@@ -263,6 +265,10 @@ td {
     }
     #education-table > tr > :nth-child(3) {
         border-bottom: 1px solid white;
+    }
+    /* No line under the last entry */
+    #education-table > :last-child > :nth-child(3) {
+        border: none;
     }
 }
 @media (max-width: 500px) {
