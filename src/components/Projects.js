@@ -6,6 +6,7 @@ import videoGameSales from "../images/video_game_sales.PNG";
 import finnkinoSearch from "../images/finnkino_search.PNG";
 import mealRecipes from "../images/meal_recipes.png";
 import movieSearchLogin from "../images/movies_search_login.png";
+import warehouseAssistant from "../images/warehouse_assistant.PNG";
 
 class Projects extends React.Component {
     constructor(props) {
@@ -29,18 +30,19 @@ class Projects extends React.Component {
                     siteUrl: "https://node-mongo-games-frontend.herokuapp.com/",
                 },
                 {
+                    title: "Warehouse Assistant",
+                    description:
+                        "A React app made as an assignment for a software company job application. Fetches data from API's with poor data structure and built in errors to replicate a real-life legacy API. UI created with AntDesign.",
+                    image: warehouseAssistant,
+                    sourceUrl: "https://github.com/hk279/Reaktor-assignment-2020",
+                    siteUrl: "http://reaktor-task.herokuapp.com/",
+                },
+                {
                     title: "Meal Recipes",
                     description:
                         "A React application that allows the user to browse and search for recipes in the Meal DB -API. UI created with React Bootstrap.",
                     image: mealRecipes,
                     sourceUrl: "https://github.com/hk279/MealRecipes",
-                    siteUrl: "https://meal-recipes-app.herokuapp.com/",
-                },
-                {
-                    title: "Finnkino Lite Search",
-                    description: "Light search utility for movies in Finnkino theatres.",
-                    image: finnkinoSearch,
-                    sourceUrl: "https://github.com/hk279/movies_webapp",
                     siteUrl: "",
                 },
                 {
