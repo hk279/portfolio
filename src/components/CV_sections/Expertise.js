@@ -2,7 +2,7 @@ import React from "react";
 import "../../App.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faJs, faReact, faNode, faJava } from "@fortawesome/free-brands-svg-icons";
-import { faDatabase, faMobile } from "@fortawesome/free-solid-svg-icons";
+import { faDatabase, faMobile, faPencilRuler } from "@fortawesome/free-solid-svg-icons";
 
 const Expertise = () => {
     return (
@@ -23,10 +23,7 @@ const Expertise = () => {
                         <td>
                             <FontAwesomeIcon icon={faReact} size="3x" />
                         </td>
-                        <td>
-                            After getting a good understanding of vanilla JS, I have gotten more into React. Front-end
-                            in my most recent projects is build with React.
-                        </td>
+                        <td>React is my favorite and most-used front-end framework at the moment.</td>
                     </tr>
                     <tr>
                         <td>
@@ -42,22 +39,28 @@ const Expertise = () => {
                         <td>
                             <FontAwesomeIcon icon={faNode} size="3x" />
                         </td>
-                        <td>
-                            Node.js is my most used backend technology. Express.js and templating (EJS) are also part of
-                            my expertise.
-                        </td>
+                        <td>Node with Express.js is the back-end solution that I am most familiar with.</td>
                     </tr>
                     <tr>
                         <td>
                             <FontAwesomeIcon icon={faDatabase} size="3x" />
                         </td>
-                        <td>In my previous projects I have used MySQL and MongoDB database solutions.</td>
+                        <td>In my previous projects I have used MySQL, MongoDB and Firebase database solutions.</td>
                     </tr>
                     <tr>
                         <td>
                             <FontAwesomeIcon icon={faJava} size="3x" />
                         </td>
                         <td>Basic knowledge of Java. I haven't created any serious applications with it.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <FontAwesomeIcon icon={faPencilRuler} size="3x" />
+                        </td>
+                        <td>
+                            I am familiar with prototyping websites and applications. Previously I have mostly done it
+                            with Adobe XD.
+                        </td>
                     </tr>
                 </tbody>
             </table>
