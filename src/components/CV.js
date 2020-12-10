@@ -1,5 +1,4 @@
 import React from "react";
-import "../App.css";
 import Contact from "./CV_sections/Contact";
 import Experience from "./CV_sections/Experience";
 import Education from "./CV_sections/Education";

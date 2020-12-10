@@ -1,5 +1,4 @@
 import React from "react";
-import "../../App.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faJs, faReact, faNode, faJava } from "@fortawesome/free-brands-svg-icons";
 import { faDatabase, faMobile, faPencilRuler } from "@fortawesome/free-solid-svg-icons";
@@ -50,7 +49,10 @@ const Expertise = () => {
                         <td>
                             <FontAwesomeIcon icon={faJava} size="3x" />
                         </td>
-                        <td>Basic knowledge of Java. I haven't created any serious applications with it.</td>
+                        <td>
+                            Basic knowledge of Java and Kotlin. Java was the first programming language that I was
+                            introduced to. I have been learning the basics of Android Studio with Kotlin.
+                        </td>
                     </tr>
                     <tr>
                         <td>

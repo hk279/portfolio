@@ -1,5 +1,4 @@
 import React from "react";
-import "../App.css";
 import portrait from "../images/photo.jpg";
 
 const Home = () => {
