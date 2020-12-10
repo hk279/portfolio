@@ -3,7 +3,6 @@ import "../App.css";
 import ProjectCard from "./ProjectCard";
 import quizApp from "../images/quiz_app.PNG";
 import videoGameSales from "../images/video_game_sales.PNG";
-import finnkinoSearch from "../images/finnkino_search.PNG";
 import mealRecipes from "../images/meal_recipes.png";
 import movieSearchLogin from "../images/movies_search_login.png";
 import warehouseAssistant from "../images/warehouse_assistant.PNG";

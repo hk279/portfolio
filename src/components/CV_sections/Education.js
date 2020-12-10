@@ -1,8 +1,8 @@
-import React from 'react'
-import '../../App.css'
+import React from "react";
+import "../../App.css";
 
 const Education = () => {
-    return(
+    return (
         <div className="fade-in">
             <h1>Education</h1>
             {/* <ul className="education-list">
@@ -11,7 +11,7 @@ const Education = () => {
                 <li>High School - Heinolan lukio<br/>Graduation 2013</li>
             </ul> */}
             <table>
-                <tbody id="education-table">
+                <tbody id="education-table-body">
                     <tr>
                         <td>2018-</td>
                         <td>Laurea University of Applied Sciences</td>
@@ -30,7 +30,7 @@ const Education = () => {
                 </tbody>
             </table>
         </div>
-    )
-}
+    );
+};
 
-export default Education
+export default Education;

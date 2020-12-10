@@ -8,7 +8,7 @@ const Expertise = () => {
     return (
         <div className="fade-in">
             <h1>Expertise</h1>
-            <table style={{ width: "80%", margin: "auto" }}>
+            <table id="expertise-table">
                 <tbody>
                     <tr>
                         <td>
@@ -31,8 +31,7 @@ const Expertise = () => {
                         </td>
                         <td>
                             Having studied React.js, it was a natural progression for me to get into mobile development
-                            through React Native. This is one of the technologies that I am very much looking forward to
-                            learning more about.
+                            through React Native.
                         </td>
                     </tr>
                     <tr>

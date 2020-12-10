@@ -6,8 +6,8 @@ const Experience = () => {
     return (
         <div className="fade-in">
             <h1>Experience</h1>
-            <table>
-                <tbody id="work-xp">
+            <table id="experience-table">
+                <tbody id="experience-table-body">
                     <tr>
                         <td>4/2019 – Present</td>
                         <td>Löfkulla Golf</td>
