@@ -48,7 +48,7 @@ class Projects extends React.Component {
                 {
                     title: "React Native Apps",
                     description:
-                        "A few examples of React Native applications can be found in my GitHub. These are regular React Native apps, but I have done other with Expo as well.",
+                        "A few examples of React Native applications can be found in my GitHub. These are regular React Native apps, but I have done others with Expo as well.",
                     image: reactNative,
                     sourceUrl: "https://github.com/hk279/",
                     siteUrl: "",
