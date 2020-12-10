@@ -6,6 +6,7 @@ import videoGameSales from "../images/video_game_sales.PNG";
 import mealRecipes from "../images/meal_recipes.png";
 import movieSearchLogin from "../images/movies_search_login.png";
 import warehouseAssistant from "../images/warehouse_assistant.PNG";
+import reactNative from "../images/react-native.jpeg";
 
 class Projects extends React.Component {
     constructor(props) {
@@ -23,7 +24,7 @@ class Projects extends React.Component {
                 {
                     title: "Videogame Sales CRUD app",
                     description:
-                        "A full-stack app using a MongoDB-database and Node.js / Express.js server with an API. Front-end is made built with React using Shards UI toolkit.",
+                        "A full-stack app using a MongoDB-database and Node.js / Express.js server with an API. Front-end is built with React using Shards UI toolkit.",
                     image: videoGameSales,
                     sourceUrl: "https://github.com/hk279/Project-3-Frontend",
                     siteUrl: "https://node-mongo-games-frontend.herokuapp.com/",
@@ -42,6 +43,14 @@ class Projects extends React.Component {
                         "A React application that allows the user to browse and search for recipes in the Meal DB -API. UI created with React Bootstrap.",
                     image: mealRecipes,
                     sourceUrl: "https://github.com/hk279/MealRecipes",
+                    siteUrl: "",
+                },
+                {
+                    title: "React Native Apps",
+                    description:
+                        "A few examples of React Native applications can be found in my GitHub. These are regular React Native apps, but I have done other with Expo as well.",
+                    image: reactNative,
+                    sourceUrl: "https://github.com/hk279/",
                     siteUrl: "",
                 },
                 {
