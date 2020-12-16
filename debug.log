@@ -1,3 +1,4 @@
 [1203/144708.853:ERROR:process_reader_win.cc(151)] SuspendThread: Käyttö estetty. (0x5)
 [1203/144708.854:ERROR:process_reader_win.cc(151)] SuspendThread: Käyttö estetty. (0x5)
 [1203/144708.854:ERROR:exception_snapshot_win.cc(98)] thread ID 16100 not found in process
+[1212/113142.859:ERROR:directory_reader_win.cc(43)] FindFirstFile: Määritettyä polkua ei löydy. (0x3)
