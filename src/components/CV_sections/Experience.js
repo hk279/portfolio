@@ -11,7 +11,7 @@ const Experience = () => {
             <table id="experience-table">
                 <tbody id="experience-table-body">
                     {exp.map((job) => (
-                        <tr>
+                        <tr key={job.title}>
                             <td>{job.time}</td>
                             <td>{job.company}</td>
                             <td>{job.title}</td>

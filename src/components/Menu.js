@@ -14,21 +14,25 @@ class Menu extends React.Component {
                 {
                     title: "Home",
                     id: "home",
+                    key: "menuHome",
                     icon: <FontAwesomeIcon icon={faHome} size="lg" />,
                 },
                 {
                     title: "About Me",
                     id: "about-me",
+                    key: "menuAboutMe",
                     icon: <FontAwesomeIcon icon={faBook} size="lg" />,
                 },
                 {
                     title: "Projects",
                     id: "projects",
+                    key: "menuProjects",
                     icon: <FontAwesomeIcon icon={faGithub} size="lg" />,
                 },
                 {
                     title: "CV",
                     id: "cv",
+                    key: "menuCv",
                     icon: <FontAwesomeIcon icon={faList} size="lg" />,
                 },
             ],
@@ -58,8 +62,8 @@ class Menu extends React.Component {
                         </div>
                     </div>
                     <ul className="menu-list">
-                        {this.state.menuItems.map((item, i) => (
-                            <li key={i} className="menu-item">
+                        {this.state.menuItems.map((item) => (
+                            <li key={item.key} className="menu-item">
                                 <Link activeClass="active" to={item.id} spy={true} smooth={true} duration={500}>
                                     {item.icon}
                                     <span style={{ marginLeft: "0.5em" }}>{item.title}</span>
