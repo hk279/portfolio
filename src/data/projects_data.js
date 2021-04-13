@@ -25,7 +25,7 @@ const projects = [
     {
         title: "Warehouse Assistant",
         description:
-            "A React app made as an assignment for a software company job application. Fetches data from API's with poor data structure and built in errors to replicate a real-life legacy API. UI created with AntDesign.",
+            "A Full-stack app made as an assignment for a software company job application. Back-end parses and serves data from intentionally poor APIs with built in errors to replicate a real-life legacy API. UI created with AntDesign.",
         image: warehouseAssistant,
         sourceUrl: "https://github.com/hk279/Reaktor-assignment-2020",
         siteUrl: "http://reaktor-task.herokuapp.com/",
