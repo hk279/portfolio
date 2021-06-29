@@ -1,6 +1,11 @@
 const experience = [
     {
-        time: "4/2019 – Present",
+        time: "5/2021 - Present",
+        company: "Visma Solutions",
+        title: "Software Developer Trainee",
+    },
+    {
+        time: "4/2019 – 10/2020",
         company: "Löfkulla Golf",
         title: "Caddiemaster (seasonal)",
     },

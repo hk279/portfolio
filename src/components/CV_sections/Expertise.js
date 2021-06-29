@@ -1,6 +1,6 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faJs, faReact, faNode, faJava } from "@fortawesome/free-brands-svg-icons";
+import { faJs, faReact, faNode, faVuejs } from "@fortawesome/free-brands-svg-icons";
 import { faDatabase, faMobile, faPencilRuler } from "@fortawesome/free-solid-svg-icons";
 
 const Expertise = () => {
@@ -9,15 +9,6 @@ const Expertise = () => {
             <h1>Expertise</h1>
             <table id="expertise-table">
                 <tbody>
-                    <tr>
-                        <td>
-                            <FontAwesomeIcon icon={faJs} size="3x" />
-                        </td>
-                        <td>
-                            I have been working with vanilla Javascript for several years and possess a good knowledge
-                            of its core features.
-                        </td>
-                    </tr>
                     <tr>
                         <td>
                             <FontAwesomeIcon icon={faReact} size="3x" />
@@ -43,15 +34,18 @@ const Expertise = () => {
                         <td>
                             <FontAwesomeIcon icon={faDatabase} size="3x" />
                         </td>
-                        <td>In my previous projects I have used MySQL, MongoDB and Firebase database solutions.</td>
+                        <td>
+                            In my previous personal projects I have used mostly MongoDB and Firebase database solutions.
+                            MySQL is familiar to me through my internship.
+                        </td>
                     </tr>
                     <tr>
                         <td>
-                            <FontAwesomeIcon icon={faJava} size="3x" />
+                            <FontAwesomeIcon icon={faVuejs} size="3x" />
                         </td>
                         <td>
-                            Basic knowledge of Java and Kotlin. Java was the first programming language that I was
-                            introduced to. I have been learning the basics of Android Studio with Kotlin.
+                            I have worked on improvements and fixes for a Vue.js app in my internship. I have a decent
+                            grasp of the basic features of Vue.
                         </td>
                     </tr>
                     <tr>
@@ -62,6 +56,10 @@ const Expertise = () => {
                             I am familiar with prototyping websites and applications. Previously I have mostly done it
                             with Adobe XD.
                         </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>I have worked with .NET framework and even some classic ASP during my internship.</td>
                     </tr>
                 </tbody>
             </table>
